@@ -22,6 +22,7 @@ Phù hợp cho người **mới bắt đầu học Flask**, học làm **web** h
 ---
 
 ## 📁 Cấu trúc thư mục
+```
 flask-basic/
 │
 ├── app.py # File chạy chính
@@ -35,3 +36,4 @@ flask-basic/
 ├── static/ # Chứa CSS, JS, Image
 │ └── css/
 │ └── style.css
+```
