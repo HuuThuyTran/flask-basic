@@ -1,36 +1,6 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #eef2f7;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: 60px auto;
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 8px;
-            text-align: center;
-        }
-        a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-
+{% extends 'layout.html' %}
+{% block content %}
+    <link rel="stylesheet" href="../static/home.css">
     <div class="container">
         <h1>Welcome to Home Page</h1>
         <p>Đây là trang chủ của website Flask.</p>
@@ -40,7 +10,17 @@
             <a href="/about">About</a>
             <a href="/contact">Contact</a>
         </div>
+        <br>
+        <!--Thông tin bài đăng của tác giả-->
+        <div>
+            {% for post in posts %}
+                <h1>Title: {{ post.title}} </h1>
+                <h2>Subtitle: {{ post.subtitle }}</h2>
+                <p>Desc: {{ post.description }} - Content: {{ post.content }}</p>
+                <div>
+                    <i>By: {{ post.author }} || {{ post.datePublished }}</i>
+                </div>
+            {% endfor %}
+        </div>
     </div>
-
-</body>
-</html>
+{% endblock %}
