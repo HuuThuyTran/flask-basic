@@ -10,5 +10,11 @@
 </head>
 <body>
     <h1 class="subject">Chào mừng bạn đến website bán hàng trực tuyến</h1>
+    <ul>
+        <li><a href="{{ url_for('product_list') }}">Tất cá sản phẩm</a></li>
+        {% for c in categories %}
+        <li><a href="#">{{ c.name }}</a></li>
+        {% endfor %}
+    </ul>
 </body>
 </html>

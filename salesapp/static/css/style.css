@@ -10,3 +10,53 @@ body {
     background-color: lightblue;
     color: darkhblue;
 }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.product-table thead {
+    background-color: #2563eb; /* xanh */
+    color: white;
+}
+
+.product-table th,
+.product-table td {
+    padding: 12px 14px;
+    border: 1px solid gray;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.product-table tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+.product-table tbody tr:hover {
+    background-color: #e0e7ff;
+    transition: 0.2s;
+}
+
+.product-table td:last-child {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.product-img {
+    width: 60px;
+    height: auto;
+    border-radius: 6px;
+}

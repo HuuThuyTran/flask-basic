@@ -3,7 +3,7 @@
     "id": 1,
     "name": "iPhone 14",
     "description": "Điện thoại iPhone 14 với màn hình OLED 6.1 inch, chip A15 Bionic, hiệu năng mạnh mẽ.",
-    "image": "",
+    "image": "images/iphone14.jpg",
     "price": 18990000,
     "category_id": 1
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Samsung Galaxy S23",
     "description": "Điện thoại Samsung Galaxy S23, thiết kế cao cấp, camera sắc nét, pin bền bỉ.",
-    "image": "",
+    "image": "images/ss_galaxy_s23.jpg",
     "price": 16990000,
     "category_id": 1
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "name": "iPad Air 5",
     "description": "Máy tính bảng iPad Air 5 sử dụng chip M1, màn hình lớn, phù hợp học tập và làm việc.",
-    "image": "",
+    "image": "images/ipad_air_5.jpg",
     "price": 15990000,
     "category_id": 2
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "name": "Xiaomi Pad 6",
     "description": "Máy tính bảng Xiaomi Pad 6 với màn hình 11 inch 144Hz, pin lớn, hiệu năng ổn định.",
-    "image": "",
+    "image": "images/xiaomi_pad_6.webp",
     "price": 8990000,
     "category_id": 2
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "name": "OPPO Reno 10",
     "description": "Điện thoại OPPO Reno 10 thiết kế mỏng nhẹ, camera chân dung đẹp, sạc nhanh.",
-    "image": "",
+    "image": "images/oppo_reno_10.png",
     "price": 10990000,
     "category_id": 1
   }
