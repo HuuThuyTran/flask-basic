@@ -37,5 +37,5 @@ flask-basic/
 │   └── __init__.py
 │   └── app.py
 │   └── index.py
-│   └── ultils.py
+│   └── utils.py
 ```
