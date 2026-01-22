@@ -38,5 +38,45 @@
     "image": "images/oppo_reno_10.png",
     "price": 10990000,
     "category_id": 1
+  },
+  {
+    "id": 6,
+    "name": "iPhone 15 Pro",
+    "description": "iPhone 15 Pro với khung titanium, chip A17 Pro, hiệu năng mạnh mẽ cho game và công việc.",
+    "image": "images/iphone_15_pro.webp",
+    "price": 27990000,
+    "category_id": 1
+  },
+  {
+    "id": 7,
+    "name": "Samsung Galaxy Z Flip 5",
+    "description": "Điện thoại gập Samsung Galaxy Z Flip 5, màn hình phụ lớn, thiết kế thời trang.",
+    "image": "images/galaxy_z_flip_5.jpg",
+    "price": 23990000,
+    "category_id": 1
+  },
+  {
+    "id": 8,
+    "name": "iPad Pro M2 11 inch",
+    "description": "iPad Pro M2 11 inch với hiệu năng cao, màn hình ProMotion, hỗ trợ Apple Pencil.",
+    "image": "images/ipad_pro_m2_11.jpg",
+    "price": 20990000,
+    "category_id": 2
+  },
+  {
+    "id": 9,
+    "name": "Samsung Galaxy Tab S9",
+    "description": "Máy tính bảng Galaxy Tab S9 với màn hình AMOLED, hỗ trợ S-Pen, pin dung lượng lớn.",
+    "image": "images/galaxy_tab_s9.jpg",
+    "price": 18990000,
+    "category_id": 2
+  },
+  {
+    "id": 10,
+    "name": "Vivo V29",
+    "description": "Điện thoại Vivo V29 nổi bật với camera chân dung Aura Light, thiết kế mỏng nhẹ.",
+    "image": "images/vivo_v29.webp",
+    "price": 9990000,
+    "category_id": 1
   }
 ]
