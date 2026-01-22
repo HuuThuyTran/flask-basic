@@ -13,7 +13,7 @@
     <ul>
         <li><a href="{{ url_for('product_list') }}">Tất cá sản phẩm</a></li>
         {% for c in categories %}
-        <li><a href="#">{{ c.name }}</a></li>
+        <li><a href="{{ url_for('product_list', category_id=c.id) }}">{{ c.name }}</a></li>
         {% endfor %}
     </ul>
 </body>

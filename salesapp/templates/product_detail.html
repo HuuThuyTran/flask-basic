@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1 class="subject">Chi tiết sản phẩm</h1>
+
+    <div class="container">
+        {% if product %}
+            <div class="product-detail">
+                <img
+                    class="product-img-large"
+                    src="{{ url_for('static', filename=product.image) }}"
+                    alt="{{ product.name }}"
+                >
+
+                <div class="product-info">
+                    <h2>{{ product.name }}</h2>
+                    <p><strong>Mã sản phẩm:</strong> {{ product.id }}</p>
+                    <p><strong>Mô tả:</strong> {{ product.description }}</p>
+                    <p class="price">
+                        <strong>Giá:</strong>
+                        {{ '{:,.0f}'.format(product.price) }} VNĐ
+                    </p>
+                </div>
+            </div>
+
+            <p>
+                <a href="{{ url_for('home') }}">Quay về trang chủ</a>
+            </p>
+        {% else %}
+            <p>❌ Sản phẩm không tồn tại</p>
+        {% endif %}
+    </div>
+</body>
+</html>

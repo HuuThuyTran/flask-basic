@@ -10,8 +10,43 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="subject">Danh mục sản phẩm</h1>
+        <h1 class="subject">
+            Danh mục sản phẩm
+            {% if category_name %}
+                ( {{ category_name }} )
+            {% endif %}
+        </h1>
         <p><a href="{{ url_for('home') }}">Quay về trang chủ</a></p>
+    </div>
+    <div class="container">
+        <form method="get" class="search-form">
+            <input
+                type="text"
+                name="keyword"
+                placeholder="Nhập tên sản phẩm..."
+                value="{{ request.args.get('keyword', '') }}"
+            >
+
+            <input
+                type="number"
+                name="from_price"
+                placeholder="Giá từ"
+                value="{{ request.args.get('price_from', '') }}"
+            >
+
+            <input
+                type="number"
+                name="to_price"
+                placeholder="Giá đến"
+                value="{{ request.args.get('price_to', '') }}"
+            >
+
+            {% if request.args.get('category_id') %}
+                <input type="hidden" name="category_id" value="{{ request.args.get('category_id') }}">
+            {% endif %}
+
+            <button type="submit">Tìm kiếm</button>
+        </form>
     </div>
     <div class="container">
         <table class="product-table">
@@ -28,7 +63,9 @@
                 {% for p in products %}
                 <tr>
                     <td>
-                        <img class="product-img" src="{{ url_for('static', filename=p.image) }}" alt="{{ p.name }}">
+                        <a href="{{ url_for('product_detail', product_id=p.id ) }}">
+                            <img class="product-img" src="{{ url_for('static', filename=p.image) }}" alt="{{ p.name }}">
+                        </a>
                     </td>
                     <td>{{ p.id }}</td>
                     <td>{{ p.name }}</td>

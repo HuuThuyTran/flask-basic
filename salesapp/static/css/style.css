@@ -6,6 +6,10 @@ h1.subject {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background-color: lightblue;
     color: darkhblue;
@@ -59,4 +63,26 @@ body {
     width: 60px;
     height: auto;
     border-radius: 6px;
+}
+
+.product-detail {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.product-img-large {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.product-info h2 {
+    margin-top: 0;
+}
+
+.price {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
 }
